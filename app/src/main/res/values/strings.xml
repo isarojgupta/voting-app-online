@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VoterApp</string>
+    <string name="join_us">Join Us</string>
+    <string name="already_hav">Already have an account</string>
+</resources>

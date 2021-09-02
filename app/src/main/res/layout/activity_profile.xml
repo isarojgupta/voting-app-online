@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Profile Setting"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="60dp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:foreground="@drawable/rounded_fg"
+        android:src="@drawable/ic_baseline_person_24"
+        />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="Your Full name"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="phone number"
+        android:gravity="center"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/adhar_card"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Your Adhar Number"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+        <TextView
+            android:id="@+id/email_add"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="Email Address"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            />
+
+
+    <Button
+        android:id="@+id/submit_profile"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        />
+
+
+</LinearLayout>

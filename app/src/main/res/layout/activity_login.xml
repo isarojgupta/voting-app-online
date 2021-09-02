@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_v_logo"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Welcome back!"
+        android:textSize="35sp"
+        />
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+         />
+
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:hint="password"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_back"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+      >
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="271dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="30sp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/create_a_acnt_welcome"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/reset_password"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Forgot Password!"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/already_hav"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="New User?"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/login_create_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:layout_gravity="center"
+        android:background="@drawable/create_a_acnt_welcome"
+        >
+        <TextView
+            android:id="@+id/login_create_a_account_btn"
+            android:layout_width="271dp"
+            android:layout_height="61dp"
+            android:text="create an account"
+            android:textSize="22dp"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+</LinearLayout>

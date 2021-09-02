@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_candidate_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_rectanglee"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/candidate_profile_photo"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_baseline_person_24"
+        />
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/candidate_name"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Kamal Hasan"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="43dp"
+        android:textColor="#0085FF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/candidate_party_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Bharatiya Janta Party "
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="37dp"
+
+        android:textColor="#0085FF"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_back"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:id="@+id/choose_btn"
+            android:layout_width="265dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="Choose"
+            android:textSize="25sp"
+            />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

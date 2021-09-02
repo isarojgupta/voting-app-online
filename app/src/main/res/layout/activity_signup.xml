@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="67dp"
+        android:layout_height="72dp"
+
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+
+    <TextView
+        android:id="@+id/join_us"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/join_us"
+        android:textSize="35sp" />
+
+
+
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_back"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+
+      >
+
+        <TextView
+            android:id="@+id/create_acnt_btn"
+            android:layout_width="271dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="Create a account"
+            android:textSize="20sp"
+
+             />
+              </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <TextView
+        android:id="@+id/already_hav"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+           android:layout_gravity="center"
+
+            android:text="@string/already_hav"
+        />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_up_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/create_a_acnt_welcome"
+        >
+
+
+        <TextView
+            android:id="@+id/welcome_create_a_account_btn"
+            android:layout_width="271dp"
+            android:layout_height="61dp"
+            android:text="LogIn"
+            android:textSize="22dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </LinearLayout>
+
+</LinearLayout>
