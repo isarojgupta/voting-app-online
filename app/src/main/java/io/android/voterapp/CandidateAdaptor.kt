@@ -27,14 +27,14 @@ class CandidateAdaptor(private val cList:List<CandidateModel>) :
     override fun onBindViewHolder(holder: CandidateAdaptor.ViewHolder, position: Int) {
         val candidateModel = cList[position]
 
-        val imageLoader = ImageLoader.getInstance()
-        val bmp = imageLoader.loadImageSync(candidateModel.photoUrl)
-        holder.candidateProfilePhoto.setImageBitmap(bmp)
+
         holder.candidateFullName.text = candidateModel.candidateName
         holder.candidatePartyName.text = candidateModel.candidateParty
 
 
-
+        val imageLoader = ImageLoader.getInstance()
+        val bmp = imageLoader.loadImageSync(candidateModel?.photoUrl)
+        holder.candidateProfilePhoto.setImageBitmap(bmp)
     }
 
     override fun getItemCount(): Int {

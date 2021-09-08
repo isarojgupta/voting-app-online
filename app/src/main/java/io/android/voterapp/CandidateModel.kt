@@ -2,7 +2,7 @@ package io.android.voterapp
 
 import java.net.URI
 
-data class CandidateModel(val candidateName:String,
-                            val candidateParty:String,
-                            val photoUrl:String)
+data class CandidateModel(var candidateName:String? = null,
+                            var candidateParty:String? = null,
+                            var photoUrl:String? = null)
 
